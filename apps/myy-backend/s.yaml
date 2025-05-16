@@ -1,0 +1,67 @@
+edition: 3.0.0
+name: myy-backend
+access: 'default'
+vars:
+  region: 'cn-hongkong'
+  functionName: myy-backend-${env(DOMAIN_PREFIX)}
+resources:
+  myy-backend:
+    component: fc3
+    actions:
+      pre-deploy:
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm install
+          path: ./
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm run build
+          path: ./
+        - run: cp package.json dist/
+          path: ./
+        - run: cd dist && npm install --production
+          path: ./
+    props:
+      serviceName: 'my-service'
+      domainName: 'foliumatrix.com'  
+      region: ${vars.region}
+      functionName: ${vars.functionName}
+      runtime: 'custom.debian10'
+      description: 'hello world by Hono'
+      timeout: 60
+      memorySize: 512
+      environmentVariables:
+        PATH: >-
+          /var/fc/lang/nodejs20/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin
+        NODE_PATH: /opt/nodejs/node_modules
+      cpu: 0.5
+      diskSize: 512
+      code: ./dist
+      customRuntimeConfig:
+        command:
+          - node
+          - index.js
+        port: 9000
+      triggers:
+        - triggerConfig:
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            authType: anonymous
+            disableURLInternet: false
+          triggerName: default
+          description: ''
+          qualifier: LATEST
+          triggerType: http
+  fc3_domain_0:
+    component: fc3-domain
+    props:
+      region: ${vars.region}
+      domainName: ${env(DOMAIN_PREFIX)}.foliumatrix.com
+      protocol: HTTP,HTTPS
+      routeConfig:
+        routes:
+          - path: /*
+            functionName: ${vars.functionName}
+      certConfig:
+        certName: foliumatrix-3
+        certificate: oss://cn-hongkong/myy-backend-foliumatrix/cert/cert.pem
+        privateKey: oss://cn-hongkong/myy-backend-foliumatrix/cert/private.pem

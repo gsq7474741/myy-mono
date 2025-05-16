@@ -1,0 +1,32 @@
+0. 当你有95%以上的把握时再写代码，否则向我提问或讨论来获取更多信息
+1. 这是一个monorepo项目，使用turbo + pnpm workspaces
+2. 项目包含了小程序前端（myy-app），管理后台系统前端（myy-dashboard），后端服务（myy-backend），以及一些公共组件
+3. 项目使用ts + nodejs，具体每个库使用的技术栈如下
+    - 小程序前端：Taro, Vue, Pinia, UnoCss
+        1. 本项目使用pnpm管理包，使用ts + taro + vue3 + pinia技术栈
+        2. 代码逻辑、状态管理和后端调用写在stores文件夹中
+        3. 页面逻辑写在pages文件夹中
+        4. 组件写在components文件夹中，组件名称需要和文件名一致，尽可能模块化抽象并解耦
+        5. 必须使用 headless+tailwind 风格, 禁止css嵌套，或者用scss
+    - 管理后台系统前端：ts + nextjs + shadcn
+        1. 所有开发需先查阅 `.docs/tips.md` 文档。
+        2. 文件命名、变量命名、CSS类名需遵循统一规范（组件PascalCase、工具camelCase、常量SNAKE_CASE、Tailwind类kebab-case）。
+        3. 必须全程使用TypeScript，避免any类型，接口/类型定义清晰。
+        4. 前端采用React/Next.js（函数组件+Hooks），页面组件放在app目录，UI组件放在components目录，优先使用shadcn/ui组件库。
+        5. 数据获取用Server Actions，客户端用SWR/React Query，避免在客户端直接操作数据库。
+        6. 状态管理优先useState/useReducer/Context，避免prop drilling。
+        7. 错误处理需有try/catch和UI错误边界，向用户展示有意义的错误信息。
+        8. UI设计需响应式，使用Tailwind断点，兼容移动端与桌面端。
+        9. API需RESTful，路径kebab-case，响应格式统一，错误处理完善。
+        10. Prisma用于数据库管理，模型定义规范，迁移和事务处理，避免性能瓶颈。
+        11. 所有输入数据前后端均需用Zod/Yup校验，错误信息友好。
+        12. 图片优化、懒加载、大列表虚拟化、服务器组件等性能优化措施必须落实。
+        13. 认证用NextAuth.js，RBAC权限控制，防范XSS/CSRF，敏感操作需确认。
+        14. 单元测试用Vitest/Jest，组件测试用React Testing Library，E2E用Playwright，关键功能必须有测试覆盖。
+        15. 关键函数和组件需JSDoc注释，文档与代码同步，API需有使用示例。
+    - 后端服务：ts + hono + typeorm
+        1. restful设计
+        2. 分开route、service、middleware，不要用controller的模式
+        3. 做好单元测试
+4. 项目中llm_docs文件夹中的llm文档，是用于指导AI的，AI需要根据文档中的内容来完成任务
+

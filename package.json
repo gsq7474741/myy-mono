@@ -1,0 +1,20 @@
+{
+  "name": "myy-mono",
+  "packageManager": "pnpm@10.6.5",
+  "private": true,
+  "version": "1.0.0",
+  "description": "myy monorepo, managed by pnpm workspaces and turbo",
+  "workspaces": [
+    "apps/myy-app",
+    "apps/myy-backend"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "turbo": "latest"
+  }
+}

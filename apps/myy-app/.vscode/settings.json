@@ -1,0 +1,13 @@
+{
+  "cSpell.words": [
+    "Attributify",
+    "Dify",
+    "Iconify",
+    "prebundle",
+    "pxtransform",
+    "tarojs",
+    "unocss",
+    "weapp"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

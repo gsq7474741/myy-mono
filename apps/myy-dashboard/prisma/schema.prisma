@@ -1,0 +1,304 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 用户模型
+model User {
+  id                String              @id @default(cuid())
+  name              String?
+  email             String              @unique
+  password          String?
+  role              String              @default("user") // admin, inventory, sales, finance, maintenance
+  image             String?
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  plantStatusRecords PlantStatusRecord[]
+  inboundRecords    InboundRecord[]
+  outboundRecords   OutboundRecord[]
+  inventoryChecks   InventoryCheck[]
+  maintenanceTasks  MaintenanceTask[]
+  diagnosisRecords  DiagnosisRecord[]
+}
+
+// 苗木资产管理
+model Plant {
+  id               String              @id @default(cuid())
+  name             String
+  species          String
+  variety          String?
+  specifications   Json                // 高度、胸径、冠幅等
+  age              Int?
+  source           String?
+  value            Decimal             @db.Decimal(10, 2)
+  status           String
+  location         String?
+  images           PlantImage[]
+  createdAt        DateTime            @default(now())
+  updatedAt        DateTime            @updatedAt
+  inventory        Inventory?
+  category         Category            @relation(fields: [categoryId], references: [id])
+  categoryId       String
+  statusRecords    PlantStatusRecord[]
+  maintenanceRecords MaintenanceRecord[]
+  diagnosisRecords DiagnosisRecord[]
+}
+
+model PlantImage {
+  id        String   @id @default(cuid())
+  url       String
+  plant     Plant    @relation(fields: [plantId], references: [id])
+  plantId   String
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id          String     @id @default(cuid())
+  name        String
+  parentId    String?
+  parent      Category?  @relation("CategoryHierarchy", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryHierarchy")
+  plants      Plant[]
+  description String?
+}
+
+model PlantStatusRecord {
+  id          String   @id @default(cuid())
+  plant       Plant    @relation(fields: [plantId], references: [id])
+  plantId     String
+  recordDate  DateTime @default(now())
+  status      String
+  description String?
+  recordedBy  User     @relation(fields: [userId], references: [id])
+  userId      String
+}
+
+// 进销存管理
+model Inventory {
+  id              String               @id @default(cuid())
+  plant           Plant                @relation(fields: [plantId], references: [id])
+  plantId         String               @unique
+  quantity        Int
+  location        String?
+  updatedAt       DateTime             @updatedAt
+  inboundRecords  InboundRecordItem[]
+  outboundRecords OutboundRecordItem[]
+  inventoryChecks InventoryCheckItem[]
+}
+
+model InboundRecord {
+  id          String             @id @default(cuid())
+  type        String             // purchase, transfer
+  date        DateTime           @default(now())
+  operator    User               @relation(fields: [userId], references: [id])
+  userId      String
+  supplier    String?
+  batchNumber String?
+  totalAmount Decimal            @db.Decimal(10, 2)
+  items       InboundRecordItem[]
+  status      String             @default("completed")
+}
+
+model InboundRecordItem {
+  id            String        @id @default(cuid())
+  inboundRecord InboundRecord @relation(fields: [recordId], references: [id])
+  recordId      String
+  inventory     Inventory     @relation(fields: [inventoryId], references: [id])
+  inventoryId   String
+  quantity      Int
+  unitPrice     Decimal       @db.Decimal(10, 2)
+}
+
+model OutboundRecord {
+  id          String              @id @default(cuid())
+  type        String              // sale, transfer, discard
+  date        DateTime            @default(now())
+  operator    User                @relation(fields: [userId], references: [id])
+  userId      String
+  customer    Customer?           @relation(fields: [customerId], references: [id])
+  customerId  String?
+  order       Order?              @relation(fields: [orderId], references: [id])
+  orderId     String?
+  items       OutboundRecordItem[]
+  status      String              @default("completed")
+}
+
+model OutboundRecordItem {
+  id              String        @id @default(cuid())
+  outboundRecord  OutboundRecord @relation(fields: [recordId], references: [id])
+  recordId        String
+  inventory       Inventory     @relation(fields: [inventoryId], references: [id])
+  inventoryId     String
+  quantity        Int
+  unitPrice       Decimal       @db.Decimal(10, 2)
+}
+
+model InventoryCheck {
+  id          String               @id @default(cuid())
+  checkDate   DateTime             @default(now())
+  operator    User                 @relation(fields: [userId], references: [id])
+  userId      String
+  status      String               @default("pending") // pending, completed
+  items       InventoryCheckItem[]
+  description String?
+}
+
+model InventoryCheckItem {
+  id              String         @id @default(cuid())
+  inventoryCheck  InventoryCheck @relation(fields: [checkId], references: [id])
+  checkId         String
+  inventory       Inventory      @relation(fields: [inventoryId], references: [id])
+  inventoryId     String
+  systemQuantity  Int
+  actualQuantity  Int
+  difference      Int
+  note            String?
+}
+
+// 销售管理
+model Customer {
+  id              String          @id @default(cuid())
+  name            String
+  contactPerson   String?
+  phone           String?
+  email           String?
+  address         String?
+  type            String          @default("individual") // individual, company
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  orders          Order[]
+  outboundRecords OutboundRecord[]
+  maintenancePlans MaintenancePlan[]
+}
+
+model Order {
+  id              String          @id @default(cuid())
+  orderNumber     String          @unique
+  customer        Customer        @relation(fields: [customerId], references: [id])
+  customerId      String
+  orderDate       DateTime        @default(now())
+  deliveryDate    DateTime?
+  status          String          @default("pending") // pending, confirmed, shipped, completed, cancelled
+  totalAmount     Decimal         @db.Decimal(10, 2)
+  paidAmount      Decimal         @db.Decimal(10, 2) @default(0)
+  items           OrderItem[]
+  outboundRecords OutboundRecord[]
+  invoices        Invoice[]
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+model OrderItem {
+  id          String   @id @default(cuid())
+  order       Order    @relation(fields: [orderId], references: [id])
+  orderId     String
+  plantId     String
+  plantName   String
+  quantity    Int
+  unitPrice   Decimal  @db.Decimal(10, 2)
+  totalPrice  Decimal  @db.Decimal(10, 2)
+}
+
+// 财务管理
+model Invoice {
+  id          String   @id @default(cuid())
+  invoiceNumber String  @unique
+  order       Order    @relation(fields: [orderId], references: [id])
+  orderId     String
+  issueDate   DateTime @default(now())
+  dueDate     DateTime
+  amount      Decimal  @db.Decimal(10, 2)
+  status      String   @default("unpaid") // unpaid, partial, paid
+  payments    Payment[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Payment {
+  id          String   @id @default(cuid())
+  invoice     Invoice  @relation(fields: [invoiceId], references: [id])
+  invoiceId   String
+  amount      Decimal  @db.Decimal(10, 2)
+  paymentDate DateTime @default(now())
+  method      String   // cash, bank_transfer, credit_card
+  reference   String?
+  note        String?
+}
+
+model Expense {
+  id          String   @id @default(cuid())
+  category    String
+  amount      Decimal  @db.Decimal(10, 2)
+  date        DateTime @default(now())
+  description String?
+  reference   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// 养护服务管理
+model MaintenancePlan {
+  id          String            @id @default(cuid())
+  name        String
+  type        String            // regular, special
+  startDate   DateTime
+  endDate     DateTime?
+  customer    Customer?         @relation(fields: [customerId], references: [id])
+  customerId  String?
+  status      String            @default("active") // active, completed, cancelled
+  description String?
+  tasks       MaintenanceTask[]
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+}
+
+model MaintenanceTask {
+  id              String          @id @default(cuid())
+  maintenancePlan MaintenancePlan @relation(fields: [planId], references: [id])
+  planId          String
+  title           String
+  description     String?
+  scheduledDate   DateTime
+  completedDate   DateTime?
+  assignedTo      User?           @relation(fields: [userId], references: [id])
+  userId          String?
+  status          String          @default("pending") // pending, in_progress, completed, cancelled
+  records         MaintenanceRecord[]
+}
+
+model MaintenanceRecord {
+  id              String          @id @default(cuid())
+  task            MaintenanceTask @relation(fields: [taskId], references: [id])
+  taskId          String
+  plant           Plant           @relation(fields: [plantId], references: [id])
+  plantId         String
+  date            DateTime        @default(now())
+  actions         String
+  notes           String?
+  images          String[]
+}
+
+// 远程诊断管理
+model DiagnosisRecord {
+  id          String   @id @default(cuid())
+  plant       Plant    @relation(fields: [plantId], references: [id])
+  plantId     String
+  reportedBy  User     @relation(fields: [userId], references: [id])
+  userId      String
+  reportDate  DateTime @default(now())
+  symptoms    String
+  diagnosis   String?
+  treatment   String?
+  status      String   @default("pending") // pending, diagnosed, treated, resolved
+  images      String[]
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

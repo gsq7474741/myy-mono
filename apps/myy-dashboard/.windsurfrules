@@ -1,0 +1,156 @@
+# WindSurf Rules - 园林销售企业管理系统开发规范
+
+## 0. 前言
+- 工作前先查阅`.docs`目录下的`tips.md`文档
+
+
+## 2. 命名规范
+
+- **文件命名**：
+  - React组件文件: PascalCase (如 `PlantCard.tsx`)
+  - 工具函数文件: camelCase (如 `formatDate.ts`)
+  - Next.js页面: kebab-case (如 `plant-details.tsx`)
+
+- **变量命名**：
+  - React组件: PascalCase (如 `PlantDetailsForm`)
+  - 变量和函数: camelCase (如 `getPlantDetails`)
+  - 常量: SNAKE_CASE (如 `MAX_UPLOAD_SIZE`)
+  - 接口/类型: PascalCase, 接口前缀I (如 `IPlantData`)
+
+- **CSS命名**：
+  - 使用Tailwind类名，不编写自定义CSS
+  - 自定义Tailwind类使用kebab-case (如 `plant-card-hover`)
+
+## 3. 代码规范
+
+### 3.1 TypeScript
+
+- 所有代码必须使用TypeScript编写
+- 始终定义适当的类型/接口
+- 避免使用`any`类型，使用`unknown`替代
+- 使用类型推断减少冗余类型声明
+- 为API响应创建明确的接口定义
+
+### 3.2 React/Next.js
+
+- 使用函数组件和React Hooks
+- 使用Next.js App Router规范
+- 合理使用服务器组件和客户端组件
+- 页面组件放在app目录下，UI组件放在components目录下
+- 善用服务器组件减少客户端JavaScript体积
+
+
+
+### 3.3 数据获取
+
+- 使用Server Actions处理数据修改操作
+- 使用SWR或React Query处理客户端数据获取和缓存
+- 避免直接在客户端组件中调用Prisma
+
+
+
+### 3.4 状态管理
+
+- 局部状态使用`useState`
+- 复杂状态使用`useReducer`
+- 全局状态使用React Context
+- 避免多层组件间的prop drilling
+
+### 3.5 错误处理
+
+- 使用Next.js的错误边界处理UI错误
+- 服务器操作中使用try/catch妥善处理错误
+- 为用户提供有意义的错误信息
+- 记录关键错误以便调试
+
+## 4. UI组件规范
+
+### 4.1 组件结构
+
+- 组件应该小而专注，单一职责
+- 大组件应拆分为更小的组件
+- 使用组合而不是继承扩展组件功能
+- 组件props应该有完整的TypeScript类型定义
+
+
+
+### 4.2 UI组件库使用
+
+- 使用shadcn/ui作为基础组件库
+- 遵循组件库安装和使用指南
+- 统一使用组件库的设计风格
+- 需要自定义样式时，扩展而非覆盖组件库样式
+- 以下ui组件可供选择
+accordion.tsx       calendar.tsx        dialog.tsx          menubar.tsx         select.tsx          table.tsx
+alert-dialog.tsx    card.tsx            drawer.tsx          navigation-menu.tsx separator.tsx       tabs.tsx
+alert.tsx           carousel.tsx        dropdown-menu.tsx   pagination.tsx      sheet.tsx           textarea.tsx
+aspect-ratio.tsx    chart.tsx           form.tsx            popover.tsx         sidebar.tsx         toggle-group.tsx
+avatar.tsx          checkbox.tsx        hover-card.tsx      progress.tsx        skeleton.tsx        toggle.tsx
+badge.tsx           collapsible.tsx     input-otp.tsx       radio-group.tsx     slider.tsx          tooltip.tsx
+breadcrumb.tsx      command.tsx         input.tsx           resizable.tsx       sonner.tsx
+button.tsx          context-menu.tsx    label.tsx           scroll-area.tsx     switch.tsx
+
+### 4.3 响应式设计
+
+- 使用Tailwind的响应式断点
+- 确保所有页面在移动端和桌面端均可用
+- 使用Flex和Grid布局创建灵活UI
+- 测试关键视图在各种屏幕尺寸上的表现
+
+
+## 5. API和数据库规范
+
+### 5.1 API路由规范
+
+- 遵循RESTful设计原则
+- API路由路径使用kebab-case
+- 响应遵循统一格式
+- 妥善处理错误状态
+
+
+
+### 5.2 Prisma使用规范
+
+- 遵循Prisma模型定义最佳实践
+- 使用Prisma迁移管理数据库架构
+- 在服务器组件或Server Actions中使用Prisma
+- 使用事务处理关联数据修改
+- 避免大量联表查询影响性能
+
+### 5.3 数据验证
+
+- 使用Zod或Yup验证所有输入数据
+- 前端和后端均进行数据验证
+- 错误信息应该清晰友好
+
+## 6. 性能优化规范
+
+- 使用Next.js Image组件优化图片
+- 实现懒加载减少初始加载资源
+- 使用适当的缓存策略
+- 优化大列表渲染(虚拟列表)
+- 使用服务器组件减少客户端JavaScript
+- 实现服务器操作而非API路由减少网络往返
+
+## 7. 安全规范
+
+- 使用NextAuth.js实现安全认证
+- 实现RBAC(基于角色的访问控制)
+- 防范XSS和CSRF攻击
+- 所有用户输入数据必须验证和净化
+- 敏感操作需要确认步骤
+
+## 8. 测试规范
+
+- 使用Vitest或Jest编写单元测试
+- 使用React Testing Library测试组件
+- 使用Playwright进行E2E测试
+- 关键功能必须有测试覆盖
+- CI流程中运行测试确保质量
+
+## 9. 文档规范
+
+- 使用JSDoc注释关键函数和组件
+- 维护README.md和CONTRIBUTING.md
+- 文档应与代码同步更新
+- 为API创建使用示例
