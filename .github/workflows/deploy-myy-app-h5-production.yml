@@ -29,7 +29,7 @@ jobs:
 
     # 构建项目（因为工作流间无法共享artifacts，所以需要重新构建）
     - name: 安装依赖
-      run: pnpm install --frozen-lockfile
+      run: pnpm install
     
     - name: 构建项目
       env:
