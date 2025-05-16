@@ -3,6 +3,7 @@
   "packageManager": "pnpm@10.6.5",
   "private": true,
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "description": "myy monorepo, managed by pnpm workspaces and turbo",
   "workspaces": [
     "apps/myy-app",

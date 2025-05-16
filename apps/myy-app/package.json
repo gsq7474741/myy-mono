@@ -34,7 +34,7 @@
     "maintained node versions"
   ],
   "author": "",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
     "@babel/runtime": "^7.26.0",
     "@microsoft/fetch-event-source": "^2.0.1",
