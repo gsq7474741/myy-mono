@@ -12,6 +12,7 @@
   "scripts": {
     "build": "npm run build:h5",
     "dev": "npm run dev:h5",
+    "start": "serve -s dist",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
@@ -92,6 +93,7 @@
     "eslint-plugin-vue": "^8.7.1",
     "file-loader": "^6.2.0",
     "postcss": "^8.4.49",
+    "serve": "^14.2.4",
     "style-loader": "1.3.0",
     "stylelint": "^14.16.1",
     "tsconfig-paths-webpack-plugin": "^4.2.0",

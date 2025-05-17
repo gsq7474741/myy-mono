@@ -4,7 +4,12 @@ import { build } from "esbuild";
 import esbuildPluginPino from "esbuild-plugin-pino";
 import esbuildPluginTsc from "esbuild-plugin-tsc";
 import { dotenvRun } from "@dotenv-run/esbuild";
+import dotenv from 'dotenv';
 
+// 在构建时加载环境变量（仅开发环境）
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config({ path: '.env.dev' });
+}
 
 // --bundle --outfile=./dist/index.js --platform=node --target=node20
 build({

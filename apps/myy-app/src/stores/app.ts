@@ -53,10 +53,10 @@ export const useAppStore = defineStore("app", () => {
         },
         success: (res) => {
           if (res.data.code === 0) {
-            const { userid, token } = res.data.data;
+            const { id, username, token } = res.data.data;
             userToken.value = token;
-            userInfo.value = { id: userid };
-            userId.value = userid;
+            userInfo.value = { id, username };
+            userId.value = id;
             isLogin.value = true;
             useCourtyardStore().getDevices();
             resolve(userInfo.value);
