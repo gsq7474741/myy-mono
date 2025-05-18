@@ -45,7 +45,19 @@ jobs:
             AccountID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
         EOF
 
-    - name: 构建和部署
+    # 安装后端依赖
+    - name: 安装后端依赖
+      working-directory: ./apps/myy-backend
+      run: pnpm install --no-frozen-lockfile --filter=myy-backend
+
+    # 构建后端
+    - name: 构建后端
+      working-directory: ./apps/myy-backend
+      run: pnpm run build
+
+    # 部署到阿里云函数计算
+    - name: 部署到阿里云函数计算
+      working-directory: ./apps/myy-backend
       env:
         # 阿里云凭证
         ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
@@ -69,11 +81,7 @@ jobs:
         # IOT 配置
         IOT_ACCESS_KEY_ID: ${{ secrets.IOT_ACCESS_KEY_ID }}
         IOT_ACCESS_KEY_SECRET: ${{ secrets.IOT_ACCESS_KEY_SECRET }}
-      run: |
-        cd ./apps/myy-backend
-        pnpm install
-        pnpm run build
-        s deploy --use-remote --assume-yes
+      run: s deploy --use-remote --assume-yes
 
     - name: 获取部署信息
       run: cd ./apps/myy-backend && s info --output json > deploy-info.json
