@@ -35,15 +35,12 @@ jobs:
       run: s --version
 
     - name: 配置阿里云凭证
+      env:
+        ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
+        ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
+        ALIBABA_CLOUD_ACCOUNT_ID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
       run: |
-        mkdir -p ~/.s
-        cat > ~/.s/access.yaml << EOF
-        access:
-          default:
-            AccessKeyID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
-            AccessKeySecret: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
-            AccountID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
-        EOF
+        s config add -a default --AccessKeyID $ALIBABA_CLOUD_ACCESS_KEY_ID --AccessKeySecret $ALIBABA_CLOUD_ACCESS_KEY_SECRET --AccountID $ALIBABA_CLOUD_ACCOUNT_ID -f
 
     # 安装后端依赖
     - name: 安装后端依赖

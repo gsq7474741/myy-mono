@@ -1,0 +1,4 @@
+{
+  "protected_branches": ["develop"],
+  "custom_branch_policies": true
+}

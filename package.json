@@ -19,9 +19,9 @@
   "devDependencies": {
     "turbo": "latest"
   },
-  "pnpm": {
-    "patchedDependencies": {
-      "taro-ui-vue3": "patches/taro-ui-vue3.patch"
-    }
+  "dependencies": {
+    "pino": "^9.5.0",
+    "pino-pretty": "^13.0.0",
+    "libsodium-wrappers": "^0.7.15"
   }
 }

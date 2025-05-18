@@ -36,6 +36,11 @@
   ],
   "author": "",
   "license": "UNLICENSED",
+  "pnpm": {
+    "patchedDependencies": {
+      "taro-ui-vue3": "patches/taro-ui-vue3.patch"
+    }
+  },
   "dependencies": {
     "@babel/runtime": "^7.26.0",
     "@microsoft/fetch-event-source": "^2.0.1",
