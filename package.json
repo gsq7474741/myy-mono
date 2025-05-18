@@ -21,7 +21,7 @@
   },
   "pnpm": {
     "patchedDependencies": {
-      "taro-ui-vue3": "apps/myy-app/patches/taro-ui-vue3.patch"
+      "taro-ui-vue3": "patches/taro-ui-vue3.patch"
     }
   }
 }

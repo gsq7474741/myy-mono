@@ -7,7 +7,7 @@ settings:
 patchedDependencies:
   taro-ui-vue3:
     hash: f9b2e157824e1d0f79e55fda1328116a79ef1ea91d45398b43115cd7e25e2161
-    path: apps/myy-app/patches/taro-ui-vue3.patch
+    path: patches/taro-ui-vue3.patch
 
 importers:
 
