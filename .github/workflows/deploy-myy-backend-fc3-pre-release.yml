@@ -1,0 +1,86 @@
+name: 部署 myy-backend 到阿里云 FC3
+
+on:
+  pull_request:
+    branches: [ "develop" ]
+    paths:
+      - 'apps/myy-backend/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 设置 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20.x'
+        cache: 'pnpm'
+
+    - name: 安装 pnpm
+      uses: pnpm/action-setup@v2
+      with:
+        version: 8.10.0
+        run_install: true
+
+    - name: 安装 Serverless Devs
+      run: npm install -g @serverless-devs/s
+
+    - name: 检查 Serverless Devs 版本
+      run: s --version
+
+    - name: 配置阿里云凭证
+      run: |
+        mkdir -p ~/.s
+        cat > ~/.s/access.yaml << EOF
+        access:
+          default:
+            AccessKeyID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
+            AccessKeySecret: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
+            AccountID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
+        EOF
+
+    - name: 构建和部署
+      env:
+        # 阿里云凭证
+        ALIBABA_CLOUD_ACCESS_KEY_ID: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID }}
+        ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
+        ALIBABA_CLOUD_ACCOUNT_ID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
+        # 域名前缀
+        DOMAIN_PREFIX: ${{ vars.DOMAIN_PREFIX || 'api-pre-release' }}
+        # 数据库配置
+        DB_HOST: ${{ secrets.DB_HOST }}
+        DB_PORT: ${{ secrets.DB_PORT }}
+        DB_USERNAME: ${{ secrets.DB_USERNAME }}
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+        DB_DATABASE: ${{ secrets.DB_DATABASE }}
+        # JWT 配置
+        JWT_SECRET: ${{ secrets.JWT_SECRET }}
+        # OSS 配置
+        OSS_REGION: ${{ secrets.OSS_REGION }}
+        OSS_ACCESS_KEY_ID: ${{ secrets.OSS_ACCESS_KEY_ID }}
+        OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+        OSS_BUCKET_NAME: ${{ secrets.OSS_BUCKET_NAME }}
+        # IOT 配置
+        IOT_ACCESS_KEY_ID: ${{ secrets.IOT_ACCESS_KEY_ID }}
+        IOT_ACCESS_KEY_SECRET: ${{ secrets.IOT_ACCESS_KEY_SECRET }}
+      run: |
+        cd ./apps/myy-backend
+        pnpm install
+        pnpm run build
+        s deploy --use-remote --assume-yes
+
+    - name: 获取部署信息
+      run: cd ./apps/myy-backend && s info --output json > deploy-info.json
+
+    - name: 输出部署信息
+      run: |
+        echo "部署信息："
+        cat ./apps/myy-backend/deploy-info.json | jq .
+      continue-on-error: true
