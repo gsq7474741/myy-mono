@@ -16,7 +16,7 @@ resources:
           path: ./
         - run: cp package.json dist/
           path: ./
-        - run: cd dist && npm install --production
+        - run: cd dist && npm install --production --legacy-peer-deps
           path: ./
         - run: echo ------- && ls && echo ------- && ls dist && echo -------
           path: ./
