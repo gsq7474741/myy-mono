@@ -40,8 +40,8 @@ jobs:
         ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
         ALIBABA_CLOUD_ACCOUNT_ID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
       run: |
-        s config add -a default -kl AccessKeyID,AccessKeySecret,SecurityToken -il $ALIBABA_CLOUD_ACCESS_KEY_ID,$ALIBABA_CLOUD_ACCESS_KEY_SECRET,$ALIBABA_CLOUD_ACCOUNT_ID -f
-
+        s config add -f -a default --AccountID ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID}} --AccessKeyID ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_ID}} --AccessKeySecret ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET}}
+    
     # 安装后端依赖
     - name: 安装后端依赖
       working-directory: ./apps/myy-backend
