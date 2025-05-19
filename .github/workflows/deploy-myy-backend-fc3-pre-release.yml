@@ -84,5 +84,5 @@ jobs:
       working-directory: ./apps/myy-backend
       run: |
         echo "部署信息："
-        s info --output json | jq .
+        s info --output json
       continue-on-error: true
