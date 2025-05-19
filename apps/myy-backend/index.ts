@@ -13,11 +13,17 @@ import userRoutes from "./src/routes/user_route";
 
 const indexLogger = createModuleLogger('index');
 
-// 开发环境加载 .env 文件
+// 只在开发环境中加载.env文件
+// 在生产环境中，环境变量会通过esbuild插件嵌入到构建文件中
 if (process.env.NODE_ENV !== 'production') {
-    const { config } = await import('dotenv');
-    config({ path: '.env.dev' });
-    indexLogger.info(".env files loaded in development mode");
+  const { env } = await import("@dotenv-run/core");
+  env({ 
+    files: ['.env.dev'],
+    verbose: true 
+  });
+  
+  indexLogger.info(".env file loaded in development mode");
+  indexLogger.info(process.env);
 }
 
 // 创建应用
@@ -50,7 +56,7 @@ apiV1.route('/', userRoutes);
 
 app.route('/api/v1', apiV1);
 
-const port = parseInt(process.env.SRV_PORT || '3090');
+const port = process.env.NODE_ENV === 'development' ? 3090 : 9000
 
 AppDataSource.initialize().then(() => {
     indexLogger.info("App datasource initialized")

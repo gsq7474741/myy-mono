@@ -55,7 +55,6 @@ jobs:
         ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
         PAGE_OSS_BUCKET: ${{ vars.PAGE_OSS_BUCKET }}
         PAGE_OSS_REGION: ${{ vars.PAGE_OSS_REGION }}
-        PAGE_OSS_PATH: ${{ vars.PAGE_OSS_PATH }}
       run: |
         cd apps/myy-app
         npx tsx upload.ts

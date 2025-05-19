@@ -80,11 +80,9 @@ jobs:
         IOT_ACCESS_KEY_SECRET: ${{ secrets.IOT_ACCESS_KEY_SECRET }}
       run: s deploy --use-remote --assume-yes
 
-    - name: 获取部署信息
-      run: cd ./apps/myy-backend && s info --output json > deploy-info.json
-
-    - name: 输出部署信息
+    - name: 获取并输出部署信息
+      working-directory: ./apps/myy-backend
       run: |
         echo "部署信息："
-        cat ./apps/myy-backend/deploy-info.json | jq .
+        s info --output json | jq .
       continue-on-error: true
