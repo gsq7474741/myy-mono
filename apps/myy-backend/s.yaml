@@ -10,13 +10,15 @@ resources:
     actions:
       pre-deploy:
         - run: npm install -g pnpm
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm install --no-frozen-lockfile
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm install --no-frozen-lockfile --filter=myy-backend
           path: ./
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm run build
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm run build --filter=myy-backend
+          path: ./
+        - run: ls && ls dist
           path: ./
         - run: cp package.json dist/
           path: ./
-        - run: cd dist && pnpm install --prod --no-frozen-lockfile
+        - run: cd dist && pnpm install --prod --no-frozen-lockfile --filter=myy-backend
           path: ./
     props:
       serviceName: 'my-service'

@@ -80,9 +80,3 @@ jobs:
         IOT_ACCESS_KEY_SECRET: ${{ secrets.IOT_ACCESS_KEY_SECRET }}
       run: s deploy --use-remote --assume-yes
 
-    - name: 获取并输出部署信息
-      working-directory: ./apps/myy-backend
-      run: |
-        echo "部署信息："
-        s info --output json
-      continue-on-error: true
