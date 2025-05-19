@@ -10,7 +10,7 @@ export const useAppStore = defineStore("app", () => {
   const isLogin = ref(false);
   const userInfo = ref<UserInfo | null>();
   const userToken = ref("");
-  const userId = ref(1);
+  // const userId = ref(1);
 
   // 初始化时检查 quick 登录
   if (route.params.quick) {
@@ -28,7 +28,7 @@ export const useAppStore = defineStore("app", () => {
           const { id, username } = res.data.data;
           userToken.value = route.params.token;
           userInfo.value = { id, username };
-          userId.value = id;
+          // userId.value = id;
           isLogin.value = true;
           Taro.navigateTo({ url: "/pages/me/index" });
         } else {
@@ -56,7 +56,7 @@ export const useAppStore = defineStore("app", () => {
             const { id, username, token } = res.data.data;
             userToken.value = token;
             userInfo.value = { id, username };
-            userId.value = id;
+            // userId.value = id;
             isLogin.value = true;
             useCourtyardStore().getDevices();
             resolve(userInfo.value);
@@ -80,7 +80,7 @@ export const useAppStore = defineStore("app", () => {
   return {
     isLogin,
     userInfo,
-    userId,
+    // userId,
     loginByPassword,
     goToLogin,
     userToken,
