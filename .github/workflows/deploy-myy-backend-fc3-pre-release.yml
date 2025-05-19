@@ -52,6 +52,14 @@ jobs:
       working-directory: ./apps/myy-backend
       run: pnpm run build
 
+    # 准备部署包（包含依赖）
+    - name: 准备部署包
+      working-directory: ./apps/myy-backend
+      run: |
+        cp package.json dist/
+        cd dist
+        pnpm install --prod --no-frozen-lockfile
+
     # 部署到阿里云函数计算
     - name: 部署到阿里云函数计算
       working-directory: ./apps/myy-backend
