@@ -2,7 +2,7 @@ edition: 3.0.0
 name: myy-backend
 access: 'default'
 vars:
-  region: 'cn-hongkong'
+  region: 'cn-shenzhen'
   functionName: myy-backend-${env(DOMAIN_PREFIX)}
 resources:
   myy-backend:
@@ -63,5 +63,5 @@ resources:
             functionName: ${vars.functionName}
       certConfig:
         certName: foliumatrix-3
-        certificate: oss://cn-hongkong/myy-backend-foliumatrix/cert/cert.pem
-        privateKey: oss://cn-hongkong/myy-backend-foliumatrix/cert/private.pem
+        certificate: oss://cn-shenzhen/my-backend-shenzhen/cert/cert.pem
+        privateKey: oss://cn-shenzhen/my-backend-shenzhen/cert/private.pem
