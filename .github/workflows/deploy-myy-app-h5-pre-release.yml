@@ -18,7 +18,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: aly-deploy-pre-release
+    environment: app-aly-deploy-pre-release
     steps:
     - uses: actions/checkout@v4
     

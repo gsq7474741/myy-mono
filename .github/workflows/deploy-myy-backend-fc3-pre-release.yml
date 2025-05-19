@@ -10,7 +10,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+    environment: backend-aly-pre-release
     steps:
     - name: 检出代码
       uses: actions/checkout@v4

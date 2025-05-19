@@ -12,7 +12,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: aly-deploy-test
+    environment: app-aly-deploy-production
     steps:
     - uses: actions/checkout@v4
     
