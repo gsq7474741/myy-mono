@@ -9,16 +9,13 @@ resources:
     component: fc3
     actions:
       pre-deploy:
-        - run: npm install -g pnpm
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm install --no-frozen-lockfile --filter=myy-backend
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm install
           path: ./
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm run build --filter=myy-backend
-          path: ./
-        - run: ls && ls dist
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm run build
           path: ./
         - run: cp package.json dist/
           path: ./
-        - run: cd dist && pnpm install --prod --no-frozen-lockfile --filter=myy-backend
+        - run: cd dist && npm install --production
           path: ./
     props:
       serviceName: 'my-service'
