@@ -40,7 +40,7 @@ jobs:
         ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
         ALIBABA_CLOUD_ACCOUNT_ID: ${{ secrets.ALIBABA_CLOUD_ACCOUNT_ID }}
       run: |
-        s config add -a default --AccessKeyID $ALIBABA_CLOUD_ACCESS_KEY_ID --AccessKeySecret $ALIBABA_CLOUD_ACCESS_KEY_SECRET --AccountID $ALIBABA_CLOUD_ACCOUNT_ID -f
+        s config add -a default -kl AccessKeyID,AccessKeySecret,SecurityToken -il $ALIBABA_CLOUD_ACCESS_KEY_ID,$ALIBABA_CLOUD_ACCESS_KEY_SECRET,$ALIBABA_CLOUD_ACCOUNT_ID -f
 
     # 安装后端依赖
     - name: 安装后端依赖
