@@ -12,7 +12,7 @@ resources:
         - run: npm install -g pnpm
         - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm install --no-frozen-lockfile --filter=myy-backend
           path: ./
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm run build --filter=myy-backend
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm run build --filter=myy-backend && cp node_modules dist/node_modules
           path: ./
         - run: echo ------- && ls && echo ------- && ls dist && echo -------
           path: ./
