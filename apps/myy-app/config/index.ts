@@ -73,6 +73,9 @@ export default defineConfig<"webpack5">(async (merge, { command, mode }) => {
     defineConstants: {
       // 定义环境变量，这些变量会在编译时被替换
       'process.env.TARO_APP_BUILD_ENV': JSON.stringify(process.env.TARO_APP_BUILD_ENV),
+      'process.env.TARO_APP_API_BASE_URL': JSON.stringify(process.env.TARO_APP_API_BASE_URL),
+      'process.env.TARO_APP_AI_API_BASE_URL': JSON.stringify(process.env.TARO_APP_AI_API_BASE_URL),
+      'process.env.TARO_APP_AI_API_KEY': JSON.stringify(process.env.TARO_APP_AI_API_KEY),
       // 'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
     copy: {
