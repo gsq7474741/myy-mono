@@ -25,31 +25,34 @@ jobs:
     - name: 安装 pnpm
       uses: pnpm/action-setup@v2
       with:
-        version: latest
-        run_install: false
+        version: 8.10.0
 
-    - name: 使用 Node.js 20.x
+    - name: 设置 Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 20.x
+        node-version: '20.x'
+        cache: 'pnpm'
 
-    # 构建项目（因为工作流间无法共享artifacts，所以需要重新构建）
-    - name: 安装依赖
-      run: pnpm install --frozen-lockfile
+    # 安装前端依赖
+    - name: 安装前端依赖
+      working-directory: ./apps/myy-app
+      run: pnpm install --no-frozen-lockfile --filter=myy-app
     
-    - name: 构建项目
+    # 构建前端
+    - name: 构建前端
+      working-directory: ./apps/myy-app
       env:
         NODE_ENV: development
         TARO_APP_BUILD_ENV: development
         TARO_APP_AI_API_KEY: ${{ secrets.TARO_APP_AI_API_KEY }}
         TARO_APP_AI_API_BASE_URL: ${{ vars.TARO_APP_AI_API_BASE_URL }}
         TARO_APP_API_BASE_URL: ${{ vars.TARO_APP_API_BASE_URL }}
-      run: pnpm --filter myy-app run build:h5
+      run: pnpm run build:h5
     
     # 安装 tsx 运行时依赖
     - name: 安装 tsx
-      run: pnpm install tsx @types/node ali-oss @types/ali-oss
       working-directory: ./apps/myy-app
+      run: pnpm install tsx @types/node ali-oss @types/ali-oss
 
     # 上传到阿里云 OSS
     - name: 上传到阿里云 OSS
@@ -59,7 +62,6 @@ jobs:
         ALIBABA_CLOUD_ACCESS_KEY_SECRET: ${{ secrets.ALIBABA_CLOUD_ACCESS_KEY_SECRET }}
         PAGE_OSS_BUCKET: ${{ vars.PAGE_OSS_BUCKET }}
         PAGE_OSS_REGION: ${{ vars.PAGE_OSS_REGION }}
-        PAGE_OSS_PATH: ${{ vars.PAGE_OSS_PATH }}
       run: |
         cd apps/myy-app
         npx tsx upload.ts

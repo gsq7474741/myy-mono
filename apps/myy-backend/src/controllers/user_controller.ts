@@ -583,7 +583,7 @@ async postMyDevWaterSwitch(c: Context) {
                 userLogger.info({ token }, '登录成功，生成token');
 
                 // 返回用户信息和 token
-            return handleSuccessResponse(c, { userid: result.user.id, token }, "登录成功", 200);
+        return handleSuccessResponse(c, { id: result.user.id, username: result.user.user_name, token }, "登录成功", 200);
             } else if (phone && verificationCode) {
                 // 手机号和验证码登录逻辑保持不变
                 return handleErrorResponse(c, '暂不支持验证码登录', 400);

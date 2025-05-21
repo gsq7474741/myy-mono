@@ -1,2 +1,17 @@
 node_modules
+.pnpm-store
 .turbo
+.s
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local development files
+*.local
+
+# Act 测试相关文件
+.secrets
+.actrc
+.github-config

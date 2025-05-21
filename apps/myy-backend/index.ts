@@ -11,8 +11,6 @@ import authRoutes from "./src/routes/auth";
 import userRoutes from "./src/routes/user_route";
 
 
-
-
 const indexLogger = createModuleLogger('index');
 
 // 只在开发环境中加载.env文件
@@ -59,7 +57,6 @@ apiV1.route('/', userRoutes);
 app.route('/api/v1', apiV1);
 
 const port = process.env.NODE_ENV === 'development' ? 3090 : 9000
-
 
 AppDataSource.initialize().then(() => {
     indexLogger.info("App datasource initialized")

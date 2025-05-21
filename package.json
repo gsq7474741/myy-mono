@@ -3,6 +3,7 @@
   "packageManager": "pnpm@10.6.5",
   "private": true,
   "version": "1.0.0",
+  "license": "UNLICENSED",
   "description": "myy monorepo, managed by pnpm workspaces and turbo",
   "workspaces": [
     "apps/myy-app",
@@ -11,10 +12,16 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "start": "turbo run start",
     "lint": "turbo run lint",
     "test": "turbo run test"
   },
   "devDependencies": {
     "turbo": "latest"
+  },
+  "dependencies": {
+    "pino": "^9.5.0",
+    "pino-pretty": "^13.0.0",
+    "libsodium-wrappers": "^0.7.15"
   }
 }

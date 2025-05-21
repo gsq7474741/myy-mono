@@ -1,0 +1,1170 @@
+{
+  "myy-mono@1.0.0": {
+    "licenses": "UNLICENSED",
+    "private": true,
+    "path": "D:\\WindSurfProjects\\myy-mono",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\LICENSE"
+  },
+  "turbo@2.5.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/turborepo",
+    "path": "D:\\WindSurfProjects\\myy-mono\\node_modules\\turbo",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\node_modules\\turbo\\LICENSE"
+  },
+  "@babel/core@7.27.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/babel/babel",
+    "publisher": "The Babel Team",
+    "url": "https://babel.dev/team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@babel\\core",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@babel\\core\\LICENSE"
+  },
+  "@babel/plugin-proposal-class-properties@7.14.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/babel/babel",
+    "publisher": "The Babel Team",
+    "url": "https://babel.dev/team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@babel\\plugin-proposal-class-properties",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@babel\\plugin-proposal-class-properties\\LICENSE"
+  },
+  "@babel/runtime@7.27.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/babel/babel",
+    "publisher": "The Babel Team",
+    "url": "https://babel.dev/team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@babel\\runtime",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@babel\\runtime\\LICENSE"
+  },
+  "@iconify-json/lets-icons@1.2.1": {
+    "licenses": "CC-BY-4.0",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@iconify-json\\lets-icons",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@iconify-json\\lets-icons\\README.md"
+  },
+  "@iconify/utils@2.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/iconify/iconify",
+    "publisher": "Vjacheslav Trushkin",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@iconify\\utils",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@iconify\\utils\\license.txt"
+  },
+  "@microsoft/fetch-event-source@2.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Azure/fetch-event-source",
+    "publisher": "Microsoft",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@microsoft\\fetch-event-source",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@microsoft\\fetch-event-source\\LICENSE"
+  },
+  "@nutui/auto-import-resolver@1.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jdf2e/nutui",
+    "publisher": "jdf2e",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@nutui\\auto-import-resolver",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@nutui\\auto-import-resolver\\README.md"
+  },
+  "@nutui/nutui-taro@4.3.13": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jdf2e/nutui",
+    "publisher": "jdcfe",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@nutui\\nutui-taro",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@nutui\\nutui-taro\\LICENSE"
+  },
+  "@taro-hooks/plugin-auto-import@2.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/innocces/taro-hooks",
+    "publisher": "innocces",
+    "email": "jiangjiangjiangxi@gmail.com",
+    "url": "https://github.com/innocces",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@taro-hooks\\plugin-auto-import",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@taro-hooks\\plugin-auto-import\\LICENSE"
+  },
+  "@taro-hooks/plugin-vue@2.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/innocces/taro-hooks",
+    "publisher": "innocces",
+    "email": "jiangjiangjiangxi@gmail.com",
+    "url": "https://github.com/innocces",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@taro-hooks\\plugin-vue",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@taro-hooks\\plugin-vue\\LICENSE"
+  },
+  "@tarojs/cli@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\cli",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\cli\\LICENSE"
+  },
+  "@tarojs/components@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\components",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\components\\LICENSE"
+  },
+  "@tarojs/helper@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\helper",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\helper\\LICENSE"
+  },
+  "@tarojs/plugin-doctor@0.0.18": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro-doctor",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-doctor",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-doctor\\README.md"
+  },
+  "@tarojs/plugin-framework-react@4.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-framework-react",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-framework-react\\LICENSE"
+  },
+  "@tarojs/plugin-framework-vue3@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-framework-vue3",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-framework-vue3\\LICENSE"
+  },
+  "@tarojs/plugin-html@4.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-html",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-html\\LICENSE"
+  },
+  "@tarojs/plugin-platform-alipay@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-alipay",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-alipay\\LICENSE"
+  },
+  "@tarojs/plugin-platform-h5@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-h5",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-h5\\LICENSE"
+  },
+  "@tarojs/plugin-platform-jd@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-jd",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-jd\\LICENSE"
+  },
+  "@tarojs/plugin-platform-qq@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-qq",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-qq\\LICENSE"
+  },
+  "@tarojs/plugin-platform-swan@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-swan",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-swan\\LICENSE"
+  },
+  "@tarojs/plugin-platform-tt@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-tt",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-tt\\LICENSE"
+  },
+  "@tarojs/plugin-platform-weapp@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-weapp",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\plugin-platform-weapp\\LICENSE"
+  },
+  "@tarojs/runtime@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro/tree/master/packages/taro-runtime",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\runtime",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\runtime\\LICENSE"
+  },
+  "@tarojs/shared@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\shared",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\shared\\LICENSE"
+  },
+  "@tarojs/taro-loader@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\taro-loader",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\taro-loader\\LICENSE"
+  },
+  "@tarojs/taro@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\taro",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\taro\\README.md"
+  },
+  "@tarojs/webpack5-runner@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\webpack5-runner",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@tarojs\\webpack5-runner\\LICENSE"
+  },
+  "@types/ali-oss@6.16.11": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\ali-oss",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\ali-oss\\LICENSE"
+  },
+  "@types/three@0.174.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@types\\three",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@types\\three\\LICENSE"
+  },
+  "@types/webpack-env@1.18.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@types\\webpack-env",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@types\\webpack-env\\LICENSE"
+  },
+  "@typescript-eslint/eslint-plugin@6.21.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@typescript-eslint\\eslint-plugin",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@typescript-eslint\\eslint-plugin\\LICENSE"
+  },
+  "@typescript-eslint/parser@6.21.0": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/typescript-eslint/typescript-eslint",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@typescript-eslint\\parser",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@typescript-eslint\\parser\\LICENSE"
+  },
+  "@unocss/preset-rem-to-px@66.1.0-beta.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/unocss/unocss",
+    "publisher": "Anthony Fu",
+    "email": "anthonyfu117@hotmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@unocss\\preset-rem-to-px",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@unocss\\preset-rem-to-px\\LICENSE"
+  },
+  "@unocss/webpack@0.65.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/unocss/unocss",
+    "publisher": "Anthony Fu",
+    "email": "anthonyfu117@hotmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@unocss\\webpack",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@unocss\\webpack\\LICENSE"
+  },
+  "@vue/babel-plugin-jsx@1.4.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/babel-plugin-jsx",
+    "publisher": "Amour1688",
+    "email": "lcz_1996@foxmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@vue\\babel-plugin-jsx",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@vue\\babel-plugin-jsx\\LICENSE"
+  },
+  "@vue/compiler-sfc@3.5.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/core",
+    "publisher": "Evan You",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@vue\\compiler-sfc",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\@vue\\compiler-sfc\\LICENSE"
+  },
+  "ali-oss@6.22.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/ali-sdk/ali-oss",
+    "publisher": "dead_horse",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\ali-oss",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\ali-oss\\LICENSE"
+  },
+  "babel-preset-taro@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\babel-preset-taro",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\babel-preset-taro\\LICENSE"
+  },
+  "clsx@2.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/lukeed/clsx",
+    "publisher": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\clsx",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\clsx\\license"
+  },
+  "css-loader@3.4.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/webpack-contrib/css-loader",
+    "publisher": "Tobias Koppers @sokra",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\css-loader",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\css-loader\\LICENSE"
+  },
+  "eslint-config-taro@4.0.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/NervJS/taro",
+    "publisher": "O2Team",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\eslint-config-taro",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\eslint-config-taro\\LICENSE"
+  },
+  "eslint-plugin-vue@8.7.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/eslint-plugin-vue",
+    "publisher": "Toru Nagashima",
+    "url": "https://github.com/mysticatea",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\eslint-plugin-vue",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\eslint-plugin-vue\\LICENSE"
+  },
+  "eslint@8.57.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/eslint/eslint",
+    "publisher": "Nicholas C. Zakas",
+    "email": "nicholas+npm@nczconsulting.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\eslint",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\eslint\\LICENSE"
+  },
+  "file-loader@6.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/webpack-contrib/file-loader",
+    "publisher": "Tobias Koppers @sokra",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\file-loader",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\file-loader\\LICENSE"
+  },
+  "marked@15.0.11": {
+    "licenses": "MIT",
+    "repository": "https://github.com/markedjs/marked",
+    "publisher": "Christopher Jeffrey",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\marked",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\marked\\LICENSE.md"
+  },
+  "myy@1.0.0": {
+    "licenses": "UNLICENSED",
+    "private": true,
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\LICENSE"
+  },
+  "pinia@2.3.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/pinia",
+    "publisher": "Eduardo San Martin Morote",
+    "email": "posva13@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\pinia",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\pinia\\LICENSE"
+  },
+  "postcss@8.5.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/postcss/postcss",
+    "publisher": "Andrey Sitnik",
+    "email": "andrey@sitnik.ru",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\postcss",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\postcss\\LICENSE"
+  },
+  "style-loader@1.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/webpack-contrib/style-loader",
+    "publisher": "Tobias Koppers @sokra",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\style-loader",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\style-loader\\LICENSE"
+  },
+  "stylelint@14.16.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/stylelint/stylelint",
+    "publisher": "stylelint",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\stylelint",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\stylelint\\LICENSE"
+  },
+  "tailwind-merge@2.6.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/dcastil/tailwind-merge",
+    "publisher": "Dany Castillo",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\tailwind-merge",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\tailwind-merge\\LICENSE.md"
+  },
+  "taro-hooks@2.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/innocces/taro-hooks",
+    "publisher": "innocces",
+    "email": "jiangjiangjiangxi@gmail.com",
+    "url": "https://github.com/innocces",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\taro-hooks",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\taro-hooks\\LICENSE"
+  },
+  "taro-ui-vue3@1.0.0-alpha.21": {
+    "licenses": "MIT",
+    "repository": "https://github.com/b2nil/taro-ui-vue3",
+    "publisher": "Ken Ho",
+    "email": "b2nil",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\taro-ui-vue3",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\taro-ui-vue3\\LICENSE"
+  },
+  "three@0.174.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/mrdoob/three.js",
+    "publisher": "mrdoob",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\three",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\three\\LICENSE"
+  },
+  "tsconfig-paths-webpack-plugin@4.2.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/dividab/tsconfig-paths-webpack-plugin",
+    "publisher": "Jonas Kello",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\tsconfig-paths-webpack-plugin",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\tsconfig-paths-webpack-plugin\\LICENSE"
+  },
+  "tsx@4.19.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/privatenumber/tsx",
+    "publisher": "Hiroki Osame",
+    "email": "hiroki.osame@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\tsx",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\tsx\\LICENSE"
+  },
+  "typescript@5.8.3": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/microsoft/TypeScript",
+    "publisher": "Microsoft Corp.",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\typescript",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\typescript\\LICENSE.txt"
+  },
+  "unocss-preset-weapp@0.65.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/MellowCo/unocss-prest-weapp",
+    "publisher": "MellowCo",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unocss-preset-weapp",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unocss-preset-weapp\\LICENSE"
+  },
+  "unocss@66.1.0-beta.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/unocss/unocss",
+    "publisher": "Anthony Fu",
+    "email": "anthonyfu117@hotmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unocss",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unocss\\LICENSE"
+  },
+  "unplugin-auto-import@0.19.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/unplugin/unplugin-auto-import",
+    "publisher": "Anthony Fu",
+    "email": "anthonyfu117@hotmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unplugin-auto-import",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unplugin-auto-import\\LICENSE"
+  },
+  "unplugin-vue-components@0.27.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/unplugin/unplugin-vue-components",
+    "publisher": "antfu",
+    "email": "anthonyfu117@hotmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unplugin-vue-components",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\unplugin-vue-components\\LICENSE"
+  },
+  "vue-loader@17.4.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/vue-loader",
+    "publisher": "Evan You",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\vue-loader",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\vue-loader\\LICENSE"
+  },
+  "vue@3.5.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vuejs/core",
+    "publisher": "Evan You",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\vue",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\vue\\LICENSE"
+  },
+  "webpack@5.91.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/webpack/webpack",
+    "publisher": "Tobias Koppers @sokra",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\webpack",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-app\\node_modules\\webpack\\LICENSE"
+  },
+  "@alicloud/dysmsapi20170525@3.1.3": {
+    "licenses": "Apache-2.0",
+    "publisher": "Alibaba Cloud SDK",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@alicloud\\dysmsapi20170525",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@alicloud\\dysmsapi20170525\\LICENSE"
+  },
+  "@alicloud/pop-core@1.8.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/aliyun/openapi-core-nodejs-sdk",
+    "publisher": "Jackson Tian",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@alicloud\\pop-core",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@alicloud\\pop-core\\README.md"
+  },
+  "@dotenv-run/core@1.3.6": {
+    "licenses": "ISC",
+    "publisher": "Chihab Otmani",
+    "email": "chihab@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@dotenv-run\\core",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@dotenv-run\\core\\README.md"
+  },
+  "@dotenv-run/esbuild@1.5.0": {
+    "licenses": "ISC",
+    "publisher": "Chihab Otmani",
+    "email": "chihab@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@dotenv-run\\esbuild",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@dotenv-run\\esbuild\\README.md"
+  },
+  "@hono/node-server@1.14.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/honojs/node-server",
+    "publisher": "Yusuke Wada",
+    "email": "yusuke@kamawada.com",
+    "url": "https://github.com/yusukebe",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@hono\\node-server",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@hono\\node-server\\README.md"
+  },
+  "@nestjs/common@11.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nestjs/nest",
+    "publisher": "Kamil Mysliwiec",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@nestjs\\common",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@nestjs\\common\\LICENSE"
+  },
+  "@nestjs/schedule@5.0.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nestjs/schedule",
+    "publisher": "Kamil Mysliwiec",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@nestjs\\schedule",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@nestjs\\schedule\\LICENSE"
+  },
+  "@nestjs/typeorm@11.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nestjs/typeorm",
+    "publisher": "Kamil Mysliwiec",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@nestjs\\typeorm",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@nestjs\\typeorm\\LICENSE"
+  },
+  "@serverless-devs/s@3.1.10": {
+    "licenses": "Apache*",
+    "repository": "https://github.com/Serverless-Devs/Serverless-Devs",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@serverless-devs\\s",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@serverless-devs\\s\\LICENSE"
+  },
+  "@types/bcrypt@5.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\bcrypt",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\bcrypt\\LICENSE"
+  },
+  "@types/es6-shim@0.31.45": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\es6-shim",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\es6-shim\\LICENSE"
+  },
+  "@types/jest@29.5.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\jest",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\jest\\LICENSE"
+  },
+  "@types/jsonwebtoken@9.0.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\jsonwebtoken",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\@types\\jsonwebtoken\\LICENSE"
+  },
+  "@types/node@20.17.47": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@types\\node",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@types\\node\\LICENSE"
+  },
+  "cross-env@7.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kentcdodds/cross-env",
+    "publisher": "Kent C. Dodds",
+    "email": "me@kentcdodds.com",
+    "url": "https://kentcdodds.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\cross-env",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\cross-env\\LICENSE"
+  },
+  "dotenv@16.5.0": {
+    "licenses": "BSD-2-Clause",
+    "repository": "https://github.com/motdotla/dotenv",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\dotenv",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\dotenv\\LICENSE"
+  },
+  "esbuild-plugin-html@1.0.0": {
+    "licenses": "ISC",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild-plugin-html"
+  },
+  "esbuild-plugin-pino@2.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/davipon/esbuild-plugin-pino",
+    "publisher": "David Peng",
+    "email": "davipondev@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild-plugin-pino",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild-plugin-pino\\LICENSE"
+  },
+  "esbuild-plugin-tsc@0.4.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/thomaschaaf/esbuild-plugin-tsc",
+    "publisher": "Thomas Schaaf",
+    "email": "schaaf@komola.de",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild-plugin-tsc",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild-plugin-tsc\\LICENSE"
+  },
+  "esbuild@0.21.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/evanw/esbuild",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\esbuild\\LICENSE.md"
+  },
+  "hono@4.7.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/honojs/hono",
+    "publisher": "Yusuke Wada",
+    "email": "yusuke@kamawada.com",
+    "url": "https://github.com/yusukebe",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\hono",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\hono\\LICENSE"
+  },
+  "ioredis@5.6.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/luin/ioredis",
+    "publisher": "Zihua Li",
+    "email": "i@zihua.li",
+    "url": "http://zihua.li",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\ioredis",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\ioredis\\LICENSE"
+  },
+  "jest@29.7.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/jestjs/jest",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\jest",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\jest\\LICENSE"
+  },
+  "jsonwebtoken@9.0.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/auth0/node-jsonwebtoken",
+    "publisher": "auth0",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\jsonwebtoken",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\jsonwebtoken\\LICENSE"
+  },
+  "mysql2@3.14.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/sidorares/node-mysql2",
+    "publisher": "Andrey Sidorov",
+    "email": "andrey.sidorov@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\mysql2",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\mysql2\\License"
+  },
+  "myy_backend@0.0.0": {
+    "licenses": "ISC",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\LICENSE"
+  },
+  "pino-pretty@13.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pinojs/pino-pretty",
+    "publisher": "James Sumners",
+    "email": "james.sumners@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\pino-pretty",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\pino-pretty\\LICENSE"
+  },
+  "pino@9.6.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pinojs/pino",
+    "publisher": "Matteo Collina",
+    "email": "hello@matteocollina.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\pino",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\pino\\LICENSE"
+  },
+  "pinyin-pro@3.26.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/zh-lx/pinyin-pro",
+    "publisher": "zh-lx",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\pinyin-pro",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\pinyin-pro\\LICENSE"
+  },
+  "reflect-metadata@0.1.14": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/rbuckton/reflect-metadata",
+    "publisher": "Ron Buckton",
+    "email": "ron.buckton@microsoft.com",
+    "url": "http://github.com/rbuckton",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\reflect-metadata",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\reflect-metadata\\LICENSE"
+  },
+  "rxjs@7.8.2": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/reactivex/rxjs",
+    "publisher": "Ben Lesh",
+    "email": "ben@benlesh.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\rxjs",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\rxjs\\LICENSE.txt"
+  },
+  "sqlite3@5.1.7": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/TryGhost/node-sqlite3",
+    "publisher": "Mapbox",
+    "url": "https://mapbox.com/",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\sqlite3",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\sqlite3\\LICENSE"
+  },
+  "ts-jest@29.3.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/kulshekhar/ts-jest",
+    "publisher": "Kulshekhar Kabra",
+    "email": "kulshekhar@users.noreply.github.com",
+    "url": "https://github.com/kulshekhar",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\ts-jest",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\ts-jest\\LICENSE.md"
+  },
+  "typeorm@0.3.24": {
+    "licenses": "MIT",
+    "repository": "https://github.com/typeorm/typeorm",
+    "publisher": "Umed Khudoiberdiev",
+    "email": "pleerock.me@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\typeorm",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\typeorm\\README.md"
+  },
+  "undici@7.9.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/nodejs/undici",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\undici",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\undici\\LICENSE"
+  },
+  "uuid@11.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/uuidjs/uuid",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\uuid",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-backend\\node_modules\\uuid\\LICENSE.md"
+  },
+  "@auth/core@0.38.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/nextauthjs/next-auth",
+    "publisher": "Balázs Orbán",
+    "email": "info@balazsorban.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@auth\\core",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@auth\\core\\LICENSE"
+  },
+  "@auth/prisma-adapter@2.9.1": {
+    "licenses": "ISC",
+    "repository": "https://github.com/nextauthjs/next-auth",
+    "publisher": "William Luke",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@auth\\prisma-adapter",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@auth\\prisma-adapter\\LICENSE"
+  },
+  "@dnd-kit/core@6.3.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/clauderic/dnd-kit",
+    "publisher": "Claudéric Demers",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\core",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\core\\LICENSE"
+  },
+  "@dnd-kit/modifiers@9.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/clauderic/dnd-kit",
+    "publisher": "Claudéric Demers",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\modifiers",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\modifiers\\LICENSE"
+  },
+  "@dnd-kit/sortable@10.0.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/clauderic/dnd-kit",
+    "publisher": "Claudéric Demers",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\sortable",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\sortable\\LICENSE"
+  },
+  "@dnd-kit/utilities@3.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/clauderic/dnd-kit",
+    "publisher": "Claudéric Demers",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\utilities",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@dnd-kit\\utilities\\LICENSE"
+  },
+  "@eslint/eslintrc@3.3.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/eslint/eslintrc",
+    "publisher": "Nicholas C. Zakas",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@eslint\\eslintrc",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@eslint\\eslintrc\\LICENSE"
+  },
+  "@hookform/resolvers@4.1.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/react-hook-form/resolvers",
+    "publisher": "bluebill1049",
+    "email": "bluebill1049@hotmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@hookform\\resolvers",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@hookform\\resolvers\\LICENSE"
+  },
+  "@prisma/client@6.8.2": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/prisma/prisma",
+    "publisher": "Tim Suchanek",
+    "email": "suchanek@prisma.io",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@prisma\\client",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@prisma\\client\\LICENSE"
+  },
+  "@radix-ui/react-accordion@1.2.10": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-accordion",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-accordion\\LICENSE"
+  },
+  "@radix-ui/react-alert-dialog@1.1.13": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-alert-dialog",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-alert-dialog\\LICENSE"
+  },
+  "@radix-ui/react-aspect-ratio@1.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-aspect-ratio",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-aspect-ratio\\LICENSE"
+  },
+  "@radix-ui/react-avatar@1.1.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-avatar",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-avatar\\LICENSE"
+  },
+  "@radix-ui/react-checkbox@1.3.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-checkbox",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-checkbox\\LICENSE"
+  },
+  "@radix-ui/react-collapsible@1.1.10": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-collapsible",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-collapsible\\LICENSE"
+  },
+  "@radix-ui/react-context-menu@2.2.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-context-menu",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-context-menu\\LICENSE"
+  },
+  "@radix-ui/react-dialog@1.1.13": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-dialog",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-dialog\\LICENSE"
+  },
+  "@radix-ui/react-dropdown-menu@2.1.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-dropdown-menu",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-dropdown-menu\\LICENSE"
+  },
+  "@radix-ui/react-hover-card@1.1.13": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-hover-card",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-hover-card\\LICENSE"
+  },
+  "@radix-ui/react-label@2.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-label",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-label\\LICENSE"
+  },
+  "@radix-ui/react-menubar@1.1.14": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-menubar",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-menubar\\LICENSE"
+  },
+  "@radix-ui/react-navigation-menu@1.2.12": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-navigation-menu",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-navigation-menu\\LICENSE"
+  },
+  "@radix-ui/react-popover@1.1.13": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-popover",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-popover\\LICENSE"
+  },
+  "@radix-ui/react-progress@1.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-progress",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-progress\\LICENSE"
+  },
+  "@radix-ui/react-radio-group@1.3.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-radio-group",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-radio-group\\LICENSE"
+  },
+  "@radix-ui/react-scroll-area@1.2.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-scroll-area",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-scroll-area\\LICENSE"
+  },
+  "@radix-ui/react-select@2.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-select",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-select\\LICENSE"
+  },
+  "@radix-ui/react-separator@1.1.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-separator",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-separator\\LICENSE"
+  },
+  "@radix-ui/react-slider@1.3.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-slider",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-slider\\LICENSE"
+  },
+  "@radix-ui/react-slot@1.2.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-slot",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-slot\\LICENSE"
+  },
+  "@radix-ui/react-switch@1.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-switch",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-switch\\LICENSE"
+  },
+  "@radix-ui/react-tabs@1.1.11": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-tabs",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-tabs\\LICENSE"
+  },
+  "@radix-ui/react-toggle-group@1.1.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-toggle-group",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-toggle-group\\LICENSE"
+  },
+  "@radix-ui/react-toggle@1.1.8": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-toggle",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-toggle\\LICENSE"
+  },
+  "@radix-ui/react-tooltip@1.2.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/radix-ui/primitives",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-tooltip",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@radix-ui\\react-tooltip\\LICENSE"
+  },
+  "@tabler/icons-react@3.31.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/tabler/tabler-icons",
+    "publisher": "codecalm",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@tabler\\icons-react",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@tabler\\icons-react\\LICENSE"
+  },
+  "@tailwindcss/postcss@4.1.7": {
+    "licenses": "MIT",
+    "repository": "https://github.com/tailwindlabs/tailwindcss",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@tailwindcss\\postcss",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@tailwindcss\\postcss\\LICENSE"
+  },
+  "@tanstack/react-table@8.21.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/TanStack/table",
+    "publisher": "Tanner Linsley",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@tanstack\\react-table",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@tanstack\\react-table\\LICENSE"
+  },
+  "@types/react-dom@19.1.5": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@types\\react-dom",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@types\\react-dom\\LICENSE"
+  },
+  "@types/react@19.1.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@types\\react",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\@types\\react\\LICENSE"
+  },
+  "class-variance-authority@0.7.1": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/joe-bell/cva",
+    "publisher": "Joe Bell",
+    "url": "https://joebell.co.uk",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\class-variance-authority",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\class-variance-authority\\LICENSE"
+  },
+  "cmdk@1.1.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pacocoursey/cmdk",
+    "publisher": "Paco",
+    "url": "https://github.com/pacocoursey",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\cmdk",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\cmdk\\LICENSE.md"
+  },
+  "date-fns@4.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/date-fns/date-fns",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\date-fns",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\date-fns\\LICENSE.md"
+  },
+  "embla-carousel-react@8.6.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/davidjerleke/embla-carousel",
+    "publisher": "David Jerleke",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\embla-carousel-react",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\embla-carousel-react\\README.md"
+  },
+  "eslint-config-next@15.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/next.js",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\eslint-config-next"
+  },
+  "eslint@9.27.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/eslint/eslint",
+    "publisher": "Nicholas C. Zakas",
+    "email": "nicholas+npm@nczconsulting.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\eslint",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\eslint\\LICENSE"
+  },
+  "input-otp@1.4.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/guilhermerodz/input-otp",
+    "publisher": "Guilherme Rodz",
+    "email": "g@rodz.dev",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\input-otp",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\input-otp\\README.md"
+  },
+  "lucide-react@0.486.0": {
+    "licenses": "ISC",
+    "repository": "https://github.com/lucide-icons/lucide",
+    "publisher": "Eric Fennis",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\lucide-react",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\lucide-react\\LICENSE"
+  },
+  "myy-dashboard@0.1.0": {
+    "licenses": "UNLICENSED",
+    "private": true,
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\README.md"
+  },
+  "next-themes@0.4.6": {
+    "licenses": "MIT",
+    "repository": "https://github.com/pacocoursey/next-themes",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\next-themes",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\next-themes\\license.md"
+  },
+  "next@15.2.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/vercel/next.js",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\next",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\next\\license.md"
+  },
+  "prisma@6.8.2": {
+    "licenses": "Apache-2.0",
+    "repository": "https://github.com/prisma/prisma",
+    "publisher": "Tim Suchanek",
+    "email": "suchanek@prisma.io",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\prisma",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\prisma\\LICENSE"
+  },
+  "react-day-picker@8.10.1": {
+    "licenses": "MIT",
+    "repository": "https://github.com/gpbl/react-day-picker",
+    "publisher": "Giampaolo Bellavite",
+    "email": "io@gpbl.dev",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-day-picker",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-day-picker\\LICENSE"
+  },
+  "react-dom@19.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-dom",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-dom\\LICENSE"
+  },
+  "react-hook-form@7.56.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/react-hook-form/react-hook-form",
+    "publisher": "Beier",
+    "email": "bluebill1049@hotmail.com",
+    "url": "Bill",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-hook-form",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-hook-form\\LICENSE"
+  },
+  "react-resizable-panels@2.1.9": {
+    "licenses": "MIT",
+    "repository": "https://github.com/bvaughn/react-resizable-panels",
+    "publisher": "Brian Vaughn",
+    "email": "brian.david.vaughn@gmail.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-resizable-panels",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react-resizable-panels\\LICENSE"
+  },
+  "react@19.1.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/facebook/react",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\react\\LICENSE"
+  },
+  "recharts@2.15.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/recharts/recharts",
+    "publisher": "recharts group",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\recharts",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\recharts\\LICENSE"
+  },
+  "sonner@2.0.3": {
+    "licenses": "MIT",
+    "repository": "https://github.com/emilkowalski/sonner",
+    "publisher": "Emil Kowalski",
+    "email": "e@emilkowal.ski",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\sonner",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\sonner\\LICENSE.md"
+  },
+  "tailwind-merge@3.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/dcastil/tailwind-merge",
+    "publisher": "Dany Castillo",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\tailwind-merge",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\tailwind-merge\\LICENSE.md"
+  },
+  "tailwindcss@4.1.7": {
+    "licenses": "MIT",
+    "repository": "https://github.com/tailwindlabs/tailwindcss",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\tailwindcss",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\tailwindcss\\LICENSE"
+  },
+  "tw-animate-css@1.3.0": {
+    "licenses": "MIT",
+    "repository": "https://github.com/Wombosvideo/tw-animate-css",
+    "publisher": "Luca Bosin",
+    "url": "https://github.com/Wombosvideo",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\tw-animate-css",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\tw-animate-css\\LICENSE"
+  },
+  "vaul@1.1.2": {
+    "licenses": "MIT",
+    "repository": "https://github.com/emilkowalski/vaul",
+    "publisher": "Emil Kowalski",
+    "email": "e@emilkowal.ski",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\vaul",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\vaul\\LICENSE.md"
+  },
+  "zod@3.24.4": {
+    "licenses": "MIT",
+    "repository": "https://github.com/colinhacks/zod",
+    "publisher": "Colin McDonnell",
+    "email": "colin@colinhacks.com",
+    "path": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\zod",
+    "licenseFile": "D:\\WindSurfProjects\\myy-mono\\apps\\myy-dashboard\\node_modules\\zod\\LICENSE"
+  }
+}

@@ -2,20 +2,23 @@ edition: 3.0.0
 name: myy-backend
 access: 'default'
 vars:
-  region: 'cn-hongkong'
+  region: 'cn-shenzhen'
   functionName: myy-backend-${env(DOMAIN_PREFIX)}
 resources:
   myy-backend:
     component: fc3
     actions:
       pre-deploy:
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm install
+        - run: npm install -g pnpm
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm install --no-frozen-lockfile --filter=myy-backend
           path: ./
-        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && npm run build
+        - run: export PATH=/usr/local/versions/node/v20.8.1/bin:$PATH && pnpm run build --filter=myy-backend
           path: ./
         - run: cp package.json dist/
           path: ./
-        - run: cd dist && npm install --production
+        - run: cd dist && npm install --production --legacy-peer-deps
+          path: ./
+        - run: echo ------- && ls && echo ------- && ls dist && echo -------
           path: ./
     props:
       serviceName: 'my-service'
@@ -63,5 +66,5 @@ resources:
             functionName: ${vars.functionName}
       certConfig:
         certName: foliumatrix-3
-        certificate: oss://cn-hongkong/myy-backend-foliumatrix/cert/cert.pem
-        privateKey: oss://cn-hongkong/myy-backend-foliumatrix/cert/private.pem
+        certificate: oss://cn-shenzhen/my-backend-shenzhen/cert/cert.pem
+        privateKey: oss://cn-shenzhen/my-backend-shenzhen/cert/private.pem
